@@ -1,26 +1,26 @@
 
 ## Installation Instructions
 
-1. Download the AWS CLI installer from the following link:  
+ - Download the AWS CLI installer from the following link:  
    [AWS CLI Download](https://awscli.amazonaws.com/AWSCLIV2.msi)
 
-2. After the download is complete, open the Terminal (Windows Command Prompt).
+ - After the download is complete, open the Terminal (Windows Command Prompt).
 
-3. Type the following command to check if AWS CLI is installed successfully:
+ - Type the following command to check if AWS CLI is installed successfully:
 ```bash
    aws --version
 ```
-4. If the output shows something like:
+ - If the output shows something like:
 ```bash
 aws-cli/2.19.1 Python/3.11.6 Windows/10 exe/AMD64 prompt/off
 ```
-5. To configure the AWS CLI for the Backblaze profile, run the following commands:
+ - To configure the AWS CLI for the Backblaze profile, run the following commands:
 
-aws configure set profile.**backblaze**.aws_access_key_id **0028aa4dc47*****0002**
-aws configure set profile.**backblaze**.aws_secret_access_key **K***************X5JB9g**
-aws configure set profile.**backblaze**.region **us-west-002**
-aws configure set profile.**backblaze**.output json
-aws configure set profile.**backblaze**.s3.endpoint_url **https://s3.us-west-002.backblazeb2.com**
+> - aws configure set profile.**backblaze**.aws_access_key_id **0028aa4dc47*****0002** 
+> - aws configure set profile.**backblaze**.aws_secret_access_key **K***************X5JB9g** 
+> - aws configure set profile.**backblaze**.region **us-west-002** 
+> - aws configure set profile.**backblaze**.output json 
+> - aws configure set profile.**backblaze**.s3.endpoint_url **https://s3.us-west-002.backblazeb2.com**
 
 *Change the **backblade** to your desired name, and make sure it has the same name as CMD and *config.ini** profile=**backblade** or something you want
 
