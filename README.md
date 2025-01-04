@@ -14,7 +14,16 @@
 ```bash
 aws-cli/2.19.1 Python/3.11.6 Windows/10 exe/AMD64 prompt/off
 ```
-5. Then the installation is successful.
+5. To configure the AWS CLI for the Backblaze profile, run the following commands:
+
+aws configure set profile.**backblaze**.aws_access_key_id **0028aa4dc47*****0002**
+aws configure set profile.**backblaze**.aws_secret_access_key **K***************X5JB9g**
+aws configure set profile.**backblaze**.region **us-west-002**
+aws configure set profile.**backblaze**.output json
+aws configure set profile.**backblaze**.s3.endpoint_url **https://s3.us-west-002.backblazeb2.com**
+
+*Change the **backblade** to your desired name, and make sure it has the same name as CMD and *config.ini** profile=**backblade** or something you want
+
 ## Sample config.ini
 ```ini
 [Profile_backblaze]
